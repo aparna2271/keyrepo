@@ -1,0 +1,9 @@
+dev/instances/*.tfstate
+instances/*.tfstate.backup
+instances/*.tfplan
+instance/ .terraform/
+
+instances/ .terraform.lock.hcl
+
+instances/assignment1
+instances/*.pub
