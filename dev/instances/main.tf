@@ -116,3 +116,33 @@ resource "aws_eip" "static_eip" {
     }
   )
 }
+
+
+
+  
+   ingress {
+    description      = "HTTP from everywhere"
+    from_port        = 8072
+    to_port          = 8072
+    protocol         = "tcp"
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = ["::/0"]
+  }
+  
+   ingress {
+    description      = "HTTP from everywhere"
+    from_port        = 8073
+    to_port          = 8073
+    protocol         = "tcp"
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = ["::/0"]
+  }
+  
+   ingress {
+    description      = "HTTP from everywhere"
+    from_port        = 8074
+    to_port          = 8074
+    protocol         = "tcp"
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = ["::/0"]
+  }
