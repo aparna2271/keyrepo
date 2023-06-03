@@ -64,7 +64,13 @@ resource "aws_instance" "my_amazon" {
   )
 }
 
+resource "aws_ecr_respository" "assignment1_mainrepo"{
+name = "assignment1_mainrepo"
+}
 
+resource "aws_ecr_respository" "assignment1_datarepo"{
+name = "assignment1_datarepo"
+}
 # Adding SSH key to Amazon EC2
 resource "aws_key_pair" "my_key" {
   key_name   = local.name_prefix
